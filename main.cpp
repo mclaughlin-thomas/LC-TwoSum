@@ -24,8 +24,8 @@ int main(void){
     int *answer;
     int index1;
     int index2;
-    
+
     answer=twoSum(container,target);
-    std::cout<<container[answer[0]] <<" "<< container[answer[1]];
+    std::cout<<container[answer[0]] <<" + "<< container[answer[1]] << " = "<< target;
     return 0;
 }
