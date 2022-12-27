@@ -1,12 +1,12 @@
 #include <iostream>
-#include <tr1/unordered_map>
-using namespace std::tr1;
+#include <unordered_map>
+//configured/changed path to allow library above
 
 #define ARRAY_SIZE 5
 
 int  *twoSum(int container[],int target) {
     static int answerArray[2]={-1,-1};
-    unordered_map<int, int> umap;
+    std::unordered_map<int, int> umap;
     
     for(int i=0;i<ARRAY_SIZE;i++){
         if(umap.count(container[i])==1){\
@@ -20,6 +20,7 @@ int  *twoSum(int container[],int target) {
 
 int main(void){
     int container[ARRAY_SIZE]={1,5,10,20,38};
+    
     int target=6;
     int *answer;
     int index1;
